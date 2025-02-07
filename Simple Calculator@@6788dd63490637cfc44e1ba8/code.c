@@ -19,7 +19,7 @@ int main() {
             printf("error");
         }
         else{
-            printf("%.2f", a/b);
+            printf("%.f", (float)a/b);
         }
     }
     else{
