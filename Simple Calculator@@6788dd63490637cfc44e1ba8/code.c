@@ -23,7 +23,7 @@ int main() {
         }
     }
     else{
-        printf("Error");
+        printf("error");
     }
     return 0;
 }
