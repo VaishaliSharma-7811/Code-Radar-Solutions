@@ -3,19 +3,24 @@
 int main() {
     int a,b;
     char op;
-    scanf("%d %d", &a, &b);
-    scanf("%c", &op);
+    scanf("%d %d %c", &a, &b, &op);
+    
     if(op == '+'){
-        printf(a+b);
+        printf("%d", a+b);
     }
     else if(op == '-'){
-        printf(a-b);
+        printf("%d", a-b);
     }
     else if(op == '*'){
-        printf(a*b);
+        printf("%d", a*b);
     }
     else if(op == '/'){
-        printf(a/b);
+        if(b==0){
+            printf("Error");
+        }
+        else{
+            printf("%.2f", a/b);
+        }
     }
     else{
         printf("Error");
